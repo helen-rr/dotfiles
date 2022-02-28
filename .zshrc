@@ -8,9 +8,6 @@ export GOPRIVATE="github.com/RoseRocket"
 export GOPATH="${HOME}/go"
 export PATH="/usr/local/go/bin:$PATH"
 
-# https://github.com/golang/go/issues/49138
-export MallocNanoZone=0
-
 # Path to your oh-my-zsh installation.
 export ZSH="${HOME}/.oh-my-zsh"
 
