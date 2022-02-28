@@ -1,9 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export GITHUB_USER="helen-rr"
-# export GITHUB_TOKEN="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" #MacBookPro token
-export GITHUB_TOKEN="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" #Codespaces
-# export GITHUB_TOKEN=
+export GITHUB_TOKEN="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"
 export GOPRIVATE="github.com/RoseRocket"
 export GOPATH="${HOME}/go"
 export PATH="/usr/local/go/bin:$PATH"
@@ -190,4 +188,4 @@ DEFAULT_USER=$USER
 prompt_dir() {
   prompt_segment blue black "%c"
 }
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ${HOME}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
