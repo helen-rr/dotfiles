@@ -1,7 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export GITHUB_USER="helen-rr"
-export GITHUB_TOKEN="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"
+export GITHUB_TOKEN=
 export GOPRIVATE="github.com/RoseRocket"
 export GOPATH="${HOME}/go"
 export PATH="/usr/local/go/bin:$PATH"
