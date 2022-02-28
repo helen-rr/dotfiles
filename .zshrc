@@ -5,14 +5,14 @@ export GITHUB_USER="helen-rr"
 export GITHUB_TOKEN="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" #Codespaces
 # export GITHUB_TOKEN=
 export GOPRIVATE="github.com/RoseRocket"
-export GOPATH="/Users/helenouyang/go"
+export GOPATH="${HOME}/go"
 export PATH="/usr/local/go/bin:$PATH"
 
 # https://github.com/golang/go/issues/49138
 export MallocNanoZone=0
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/helenouyang/.oh-my-zsh"
+export ZSH="${HOME}/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -109,8 +109,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # nagivation
-alias rr="cd ~/RoseRocket/src/github.com/RoseRocket/roserocket"
-alias ho="cd ~/Helenohyeah"
+alias rr="cd ${HOME}/roserocket"
 
 # docker
 alias dps="docker-compose ps"
@@ -163,10 +162,10 @@ alias glog="git log --oneline --decorate"
 alias gst="git status"
 
 # cypress
-alias cyup="cd ~/RoseRocket/src/github.com/RoseRocket/roserocket/ui; npm run cy:open"
+alias cyup="cd ${HOME}/roserocket/ui; npm run cy:open"
 
 # payments microservice
-alias pt="cd ~/RoseRocket/src/github.com/RoseRocket/payments-balance"
+alias pt="cd ${HOME}/payments-balance"
 alias ptbuild="pt;docker-compose build --build-arg GITHUB_USER=${GITHUB_USER}"
 alias ptup="pt;mutagen-compose up -d"
 alias ptdown="pt;mutagen-compose down --remove-orphans"
@@ -174,17 +173,17 @@ alias ptreload="pt;make reload"
 alias ptlogs="pt;docker-compose logs -f roserocket-payments-balance"
 
 # terms microservice
-alias tm="cd ~/RoseRocket/src/github.com/RoseRocket/terms"
+alias tm="cd ${HOME}/terms"
 alias tmup="tm;docker-compose build --build-arg GITHUB_USER=${GITHUB_USER} --build-arg GITHUB_TOKEN=${GITHUB_TOKEN}; docker-compose up"
 
 # connector routing service microservice
-alias crs='cd ~/RoseRocket/src/github.com/RoseRocket/connector-routing-service'
-alias crsbuild='crs;docker-compose build --build-arg GITHUB_USER=${GITHUB_USER}'
-alias crsup='crs;mutagen-compose up -d'
-alias crsdown='crs;mutagen-compose down --remove-orphans'
-alias crsreload='crs;make reload'
-alias crslogs='crs;docker-compose logs -f roserocket-connector-routing-service'
-alias crsrs='crsdown && crsbuild && crsup'
+alias crs="cd ${HOME}/connector-routing-service"
+alias crsbuild="crs;docker-compose build --build-arg GITHUB_USER=${GITHUB_USER}"
+alias crsup="crs;mutagen-compose up -d"
+alias crsdown="crs;mutagen-compose down --remove-orphans"
+alias crsreload="crs;make reload"
+alias crslogs="crs;docker-compose logs -f roserocket-connector-routing-service"
+alias crsrs="crsdown && crsbuild && crsup"
 
 # dynamo db cli
 alias dyup="DYNAMO_ENDPOINT=http://localhost:8000 dynamodb-admin"
