@@ -12,7 +12,7 @@ zshrc() {
     echo "==========================================================="
     echo "                  Import zshrc                             "
     echo "-----------------------------------------------------------"
-    cp -f ~/dotfiles/.zshrc ${HOME}/.zshrc
+    cat .zshrc > $HOME/.zshrc
     chsh -s /usr/bin/zsh $USERNAME
 }
 
